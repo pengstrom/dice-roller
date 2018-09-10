@@ -6,7 +6,7 @@ defmodule Dice do
 
   @spec dice(pos_integer, pos_integer, pos_integer) :: dice
   def dice(s \\ 6, n \\ 1, m \\ 1) do
-    {:dice, s, n || 1, m || 1}
+    {:dice, s || 6, n || 1, m || 1}
   end
 
   @spec const(pos_integer) :: const
