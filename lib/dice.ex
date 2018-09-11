@@ -42,7 +42,7 @@ defmodule Dice do
   end
 
   defp roll_parsed({:ok, res, spec}) do
-    [x] = roll_one(res)
+    x = roll_one(res)
     {:ok, {x, res, spec}}
   end
   defp roll_parsed(parsed), do: parsed
